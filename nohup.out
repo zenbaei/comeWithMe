@@ -1,0 +1,315 @@
+emulator: ERROR: There's another emulator instance running with the current AVD 'Nexus_6_API_23'. Exiting...
+
+Your emulator is out of date, please update by launching Android Studio:
+ - Start Android Studio
+ - Select menu "Tools > Android > SDK Manager"
+ - Click "SDK Tools" tab
+ - Check "Android Emulator" checkbox
+ - Click "OK"
+
+Scanning folders for symlinks in /home/zenbaei/Documents/jsWorkspace/ComeWithMe/node_modules (7ms)
+Starting JS server...
+Building and installing the app on the device (cd android && ./gradlew installDebug)...
+Incremental java compilation is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72301Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42301Library UP-TO-DATE
+:app:prepareComFacebookFbuiTextlayoutbuilderTextlayoutbuilder100Library UP-TO-DATE
+:app:prepareComFacebookFrescoDrawee130Library UP-TO-DATE
+:app:prepareComFacebookFrescoFbcore130Library UP-TO-DATE
+:app:prepareComFacebookFrescoFresco130Library UP-TO-DATE
+:app:prepareComFacebookFrescoImagepipeline130Library UP-TO-DATE
+:app:prepareComFacebookFrescoImagepipelineBase130Library UP-TO-DATE
+:app:prepareComFacebookFrescoImagepipelineOkhttp3130Library UP-TO-DATE
+:app:prepareComFacebookReactReactNative0554Library UP-TO-DATE
+:app:prepareComFacebookSoloaderSoloader010Library UP-TO-DATE
+:app:prepareOrgWebkitAndroidJscR174650Library UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:mergeDebugShaders UP-TO-DATE
+:app:compileDebugShaders UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:bundleDebugJsAndAssets SKIPPED
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:incrementalDebugJavaCompilationSafeguard UP-TO-DATE
+:app:compileDebugJavaWithJavac UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources UP-TO-DATE
+:app:transformClassesWithDexForDebug UP-TO-DATE
+:app:mergeDebugJniLibFolders UP-TO-DATE
+:app:transformNative_libsWithMergeJniLibsForDebug UP-TO-DATE
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:app:validateSigningDebug
+:app:packageDebug UP-TO-DATE
+:app:assembleDebug UP-TO-DATE
+:app:installDebug
+Installing APK 'app-debug.apk' on 'Nexus_6_API_23(AVD) - 6.0' for app:debug
+Installed on 1 device.
+
+BUILD SUCCESSFUL
+
+Total time: 21.396 secs
+
+This build could be faster, please consider using the Gradle Daemon: https://docs.gradle.org/2.14.1/userguide/gradle_daemon.html
+Running /home/zenbaei/Android/Sdk//platform-tools/adb -s emulator-5554 reverse tcp:8081 tcp:8081
+Starting the app on emulator-5554 (/home/zenbaei/Android/Sdk//platform-tools/adb -s emulator-5554 shell am start -n com.comewithme/com.comewithme.MainActivity)...
+Starting: Intent { cmp=com.comewithme/.MainActivity }
+Scanning folders for symlinks in /home/zenbaei/Documents/jsWorkspace/ComeWithMe/node_modules (6ms)
+JS server already running.
+Building and installing the app on the device (cd android && ./gradlew installDebug)...
+Incremental java compilation is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72301Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42301Library UP-TO-DATE
+:app:prepareComFacebookFbuiTextlayoutbuilderTextlayoutbuilder100Library UP-TO-DATE
+:app:prepareComFacebookFrescoDrawee130Library UP-TO-DATE
+:app:prepareComFacebookFrescoFbcore130Library UP-TO-DATE
+:app:prepareComFacebookFrescoFresco130Library UP-TO-DATE
+:app:prepareComFacebookFrescoImagepipeline130Library UP-TO-DATE
+:app:prepareComFacebookFrescoImagepipelineBase130Library UP-TO-DATE
+:app:prepareComFacebookFrescoImagepipelineOkhttp3130Library UP-TO-DATE
+:app:prepareComFacebookReactReactNative0554Library UP-TO-DATE
+:app:prepareComFacebookSoloaderSoloader010Library UP-TO-DATE
+:app:prepareOrgWebkitAndroidJscR174650Library UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:mergeDebugShaders UP-TO-DATE
+:app:compileDebugShaders UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:bundleDebugJsAndAssets SKIPPED
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:incrementalDebugJavaCompilationSafeguard UP-TO-DATE
+:app:compileDebugJavaWithJavac UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources UP-TO-DATE
+:app:transformClassesWithDexForDebug UP-TO-DATE
+:app:mergeDebugJniLibFolders UP-TO-DATE
+:app:transformNative_libsWithMergeJniLibsForDebug UP-TO-DATE
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:app:validateSigningDebug
+:app:packageDebug UP-TO-DATE
+:app:assembleDebug UP-TO-DATE
+:app:installDebug
+Installing APK 'app-debug.apk' on 'Nexus_6_API_23(AVD) - 6.0' for app:debug
+Installed on 1 device.
+
+BUILD SUCCESSFUL
+
+Total time: 11.106 secs
+
+This build could be faster, please consider using the Gradle Daemon: https://docs.gradle.org/2.14.1/userguide/gradle_daemon.html
+Running /home/zenbaei/Android/Sdk//platform-tools/adb -s emulator-5554 reverse tcp:8081 tcp:8081
+Starting the app on emulator-5554 (/home/zenbaei/Android/Sdk//platform-tools/adb -s emulator-5554 shell am start -n com.comewithme/com.comewithme.MainActivity)...
+Starting: Intent { cmp=com.comewithme/.MainActivity }
+The X11 connection broke (error 1). Did the X11 server die?
+emulator: ERROR: Failed to retrieve DNS servers list from the system
+emulator: WARNING: Cannot find system DNS servers! Name resolution will be disabled.
+emulator: WARNING: UpdateCheck: Failure: Error
+emulator: WARNING: UpdateCheck: failed to get the latest version, skipping check (current version '27.2.9-4773671')
+Scanning folders for symlinks in /home/zenbaei/Documents/jsWorkspace/ComeWithMe/node_modules (7ms)
+JS server already running.
+Building and installing the app on the device (cd android && ./gradlew installDebug)...
+Incremental java compilation is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72301Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42301Library UP-TO-DATE
+:app:prepareComFacebookFbuiTextlayoutbuilderTextlayoutbuilder100Library UP-TO-DATE
+:app:prepareComFacebookFrescoDrawee130Library UP-TO-DATE
+:app:prepareComFacebookFrescoFbcore130Library UP-TO-DATE
+:app:prepareComFacebookFrescoFresco130Library UP-TO-DATE
+:app:prepareComFacebookFrescoImagepipeline130Library UP-TO-DATE
+:app:prepareComFacebookFrescoImagepipelineBase130Library UP-TO-DATE
+:app:prepareComFacebookFrescoImagepipelineOkhttp3130Library UP-TO-DATE
+:app:prepareComFacebookReactReactNative0554Library UP-TO-DATE
+:app:prepareComFacebookSoloaderSoloader010Library UP-TO-DATE
+:app:prepareOrgWebkitAndroidJscR174650Library UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:mergeDebugShaders UP-TO-DATE
+:app:compileDebugShaders UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:bundleDebugJsAndAssets SKIPPED
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:incrementalDebugJavaCompilationSafeguard UP-TO-DATE
+:app:compileDebugJavaWithJavac UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources UP-TO-DATE
+:app:transformClassesWithDexForDebug UP-TO-DATE
+:app:mergeDebugJniLibFolders UP-TO-DATE
+:app:transformNative_libsWithMergeJniLibsForDebug UP-TO-DATE
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:app:validateSigningDebug
+:app:packageDebug UP-TO-DATE
+:app:assembleDebug UP-TO-DATE
+:app:installDebug
+Installing APK 'app-debug.apk' on 'Nexus_6_API_23(AVD) - 6.0' for app:debug
+Installed on 1 device.
+
+BUILD SUCCESSFUL
+
+Total time: 16.956 secs
+
+This build could be faster, please consider using the Gradle Daemon: https://docs.gradle.org/2.14.1/userguide/gradle_daemon.html
+Running /home/zenbaei/Android/Sdk//platform-tools/adb -s emulator-5554 reverse tcp:8081 tcp:8081
+Starting the app on emulator-5554 (/home/zenbaei/Android/Sdk//platform-tools/adb -s emulator-5554 shell am start -n com.comewithme/com.comewithme.MainActivity)...
+Starting: Intent { cmp=com.comewithme/.MainActivity }
+Your emulator is out of date, please update by launching Android Studio:
+ - Start Android Studio
+ - Select menu "Tools > Android > SDK Manager"
+ - Click "SDK Tools" tab
+ - Check "Android Emulator" checkbox
+ - Click "OK"
+
+Scanning folders for symlinks in /home/zenbaei/Documents/jsWorkspace/ComeWithMe/node_modules (8ms)
+Starting JS server...
+Building and installing the app on the device (cd android && ./gradlew installDebug)...
+Checking the license for package Android SDK Build-Tools 26.0.1 in /home/zenbaei/Android/Sdk/licenses
+License for package Android SDK Build-Tools 26.0.1 accepted.
+Preparing "Install Android SDK Build-Tools 26.0.1".
+Starting the app (/home/zenbaei/Android/Sdk//platform-tools/adb shell am start -n com.comewithme/com.comewithme.MainActivity...
+error: no devices/emulators found
+Scanning folders for symlinks in /home/zenbaei/Documents/jsWorkspace/ComeWithMe/node_modules (7ms)
+JS server already running.
+Building and installing the app on the device (cd android && ./gradlew installDebug)...
+Incremental java compilation is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:react-native-vector-icons:preBuild UP-TO-DATE
+:react-native-vector-icons:preReleaseBuild UP-TO-DATE
+:react-native-vector-icons:checkReleaseManifest
+:react-native-vector-icons:preDebugAndroidTestBuild UP-TO-DATE
+:react-native-vector-icons:preDebugBuild UP-TO-DATE
+:react-native-vector-icons:preDebugUnitTestBuild UP-TO-DATE
+:react-native-vector-icons:preReleaseUnitTestBuild UP-TO-DATE
+:react-native-vector-icons:prepareComAndroidSupportAppcompatV72301Library UP-TO-DATE
+:react-native-vector-icons:prepareComAndroidSupportSupportV42301Library UP-TO-DATE
+:react-native-vector-icons:prepareComFacebookFbuiTextlayoutbuilderTextlayoutbuilder100Library UP-TO-DATE
+:react-native-vector-icons:prepareComFacebookFrescoDrawee130Library UP-TO-DATE
+:react-native-vector-icons:prepareComFacebookFrescoFbcore130Library UP-TO-DATE
+:react-native-vector-icons:prepareComFacebookFrescoFresco130Library UP-TO-DATE
+:react-native-vector-icons:prepareComFacebookFrescoImagepipeline130Library UP-TO-DATE
+:react-native-vector-icons:prepareComFacebookFrescoImagepipelineBase130Library UP-TO-DATE
+:react-native-vector-icons:prepareComFacebookFrescoImagepipelineOkhttp3130Library UP-TO-DATE
+:react-native-vector-icons:prepareComFacebookReactReactNative0554Library UP-TO-DATE
+:react-native-vector-icons:prepareComFacebookSoloaderSoloader010Library UP-TO-DATE
+:react-native-vector-icons:prepareOrgWebkitAndroidJscR174650Library UP-TO-DATE
+:react-native-vector-icons:prepareReleaseDependencies
+:react-native-vector-icons:compileReleaseAidl UP-TO-DATE
+:react-native-vector-icons:compileReleaseNdk UP-TO-DATE
+:react-native-vector-icons:compileLint UP-TO-DATE
+:react-native-vector-icons:copyReleaseLint UP-TO-DATE
+:react-native-vector-icons:compileReleaseRenderscript UP-TO-DATE
+:react-native-vector-icons:generateReleaseBuildConfig UP-TO-DATE
+:react-native-vector-icons:generateReleaseResValues UP-TO-DATE
+:react-native-vector-icons:generateReleaseResources UP-TO-DATE
+:react-native-vector-icons:mergeReleaseResources UP-TO-DATE
+:react-native-vector-icons:processReleaseManifest UP-TO-DATE
+:react-native-vector-icons:processReleaseResources UP-TO-DATE
+:react-native-vector-icons:generateReleaseSources UP-TO-DATE
+:react-native-vector-icons:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:react-native-vector-icons:compileReleaseJavaWithJavac UP-TO-DATE
+:react-native-vector-icons:extractReleaseAnnotations UP-TO-DATE
+:react-native-vector-icons:mergeReleaseShaders UP-TO-DATE
+:react-native-vector-icons:compileReleaseShaders UP-TO-DATE
+:react-native-vector-icons:generateReleaseAssets UP-TO-DATE
+:react-native-vector-icons:mergeReleaseAssets UP-TO-DATE
+:react-native-vector-icons:mergeReleaseProguardFiles UP-TO-DATE
+:react-native-vector-icons:packageReleaseRenderscript UP-TO-DATE
+:react-native-vector-icons:packageReleaseResources UP-TO-DATE
+:react-native-vector-icons:processReleaseJavaRes UP-TO-DATE
+:react-native-vector-icons:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:react-native-vector-icons:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:react-native-vector-icons:mergeReleaseJniLibFolders UP-TO-DATE
+:react-native-vector-icons:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:react-native-vector-icons:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:react-native-vector-icons:bundleRelease UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72301Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42301Library UP-TO-DATE
+:app:prepareComFacebookFbuiTextlayoutbuilderTextlayoutbuilder100Library UP-TO-DATE
+:app:prepareComFacebookFrescoDrawee130Library UP-TO-DATE
+:app:prepareComFacebookFrescoFbcore130Library UP-TO-DATE
+:app:prepareComFacebookFrescoFresco130Library UP-TO-DATE
+:app:prepareComFacebookFrescoImagepipeline130Library UP-TO-DATE
+:app:prepareComFacebookFrescoImagepipelineBase130Library UP-TO-DATE
+:app:prepareComFacebookFrescoImagepipelineOkhttp3130Library UP-TO-DATE
+:app:prepareComFacebookReactReactNative0554Library UP-TO-DATE
+:app:prepareComFacebookSoloaderSoloader010Library UP-TO-DATE
+:app:prepareComeWithMeReactNativeVectorIconsUnspecifiedLibrary UP-TO-DATE
+:app:prepareOrgWebkitAndroidJscR174650Library UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:mergeDebugShaders UP-TO-DATE
+:app:compileDebugShaders UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:bundleDebugJsAndAssets SKIPPED
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:incrementalDebugJavaCompilationSafeguard UP-TO-DATE
+:app:compileDebugJavaWithJavac UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources UP-TO-DATE
+:app:transformClassesWithDexForDebug UP-TO-DATE
+:app:mergeDebugJniLibFolders UP-TO-DATE
+:app:transformNative_libsWithMergeJniLibsForDebug UP-TO-DATE
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:app:validateSigningDebug
+:app:packageDebug UP-TO-DATE
+:app:assembleDebug UP-TO-DATE
+:app:installDebug
+Installing APK 'app-debug.apk' on 'Nexus_6_API_23(AVD) - 6.0' for app:debug
+Installed on 1 device.
+
+BUILD SUCCESSFUL
+
+Total time: 18.556 secs
+
+This build could be faster, please consider using the Gradle Daemon: https://docs.gradle.org/2.14.1/userguide/gradle_daemon.html
+Running /home/zenbaei/Android/Sdk//platform-tools/adb -s emulator-5554 reverse tcp:8081 tcp:8081
+Starting the app on emulator-5554 (/home/zenbaei/Android/Sdk//platform-tools/adb -s emulator-5554 shell am start -n com.comewithme/com.comewithme.MainActivity)...
+Starting: Intent { cmp=com.comewithme/.MainActivity }
