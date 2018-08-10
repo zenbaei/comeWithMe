@@ -4,28 +4,32 @@ import {
 } from "react-native";
 import MapView from 'react-native-maps';
 import { CurrentLocation } from './Geolocation';
+import { CWMText } from './components/ReactComponents';
 
 export default class Map extends Component {
 
+    long = 31.4400768;
+    lat = 30.0056576;
+
+    uslong = -122.4324;
+    uslat = 37.78825;
+
     constructor(props) {
         super(props);
-        this.state = {
-            region: this._getCurrentPosition()
-        };
+        this.state = { isLoading: true };
+        CurrentLocation(this._initRegion);
     }
 
-    _getCurrentPosition = () => {
-        CurrentLocation();
-        /*
-        CurrentLocation().then(
-            (position) => {
-                alert(position);
-                return {
-                    longitude: position.longitude,
-                    latitude: position.latitude
-                }
-            });
-            */
+    _initRegion = (position) => {
+        this.setState({
+            region: {
+                latitude: position.coords.latitude,
+                longitude: position.coords.longitude,
+                latitudeDelta: 0.0922,
+                longitudeDelta: 0.0421
+            },
+            isLoading: false
+        });
     }
 
     onRegionChange = (region) => {
@@ -33,11 +37,16 @@ export default class Map extends Component {
     }
 
     render() {
+        if (this.state.isLoading) {
+            return (<CWMText color="black" primary>Loading...</CWMText>)
+        }
         return (
             <View style={styles.container}>
                 <MapView style={styles.map}
                     region={this.state.region}
                     onRegionChange={this.onRegionChange}
+                    zoomEnabled={true}
+                    zoomControlEnabled={true}
                 />
             </View>
         );
