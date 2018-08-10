@@ -7,9 +7,9 @@ import Register from '../register/Register';
 import Card from "../components/card/Card";
 import CardContent from "../components/card/CardContent";
 import CardHeader from "../components/card/CardHeader";
-import { ReactCmp } from '../components/ReactComponents';
+import { ReactCmp, CWMInput, CWMLink, CWMButton, CWMText } from '../components/ReactComponents';
 import * as Constants from '../Constants';
-import { FBLogin } from './FacebookLogin';
+import { CWMFBLogin } from './FacebookLogin';
 
 //type Props = {};
 export default class Login extends Component {
@@ -29,12 +29,26 @@ export default class Login extends Component {
     return (
       <ImageBackground source={require("../../assets/images/cmeWithMe.jpg")}
         resizeMode="cover" style={{ width: '100%', height: '100%' }}>
+
         <View style={Styles.container}>
-          <Card header={new CardHeader('Come With Me', Styles.cardHeaderText)}
-            content={this.contentsArr} />
+
+          <Card header='Come With Me' headerStyle={Styles.header} color='rgba(0, 0, 0, 0.5)'>
+            <CWMInput placeholder='Email' />
+            <CWMInput placeholder='Password' />
+            <CWMLink onPress={this._forgetPassword} style={Styles.text}>
+              Forget you login detail? <Bold>Get help sigining in</Bold>
+            </CWMLink>
+            <CWMButton title='LOGIN' onPress={this._navigateToSports} style={Styles.loginButtonWrapper} />
+            <CWMText align='center'>OR</CWMText>
+            <CWMFBLogin onSuccessCallback={this._navigateToSports} />
+          </Card>
+
           <View style={Styles.footer}>
-            {this.Components.signUpLink}
+            <CWMLink onPress={this._signUp}>
+              DON'T HAVE AN ACCOUNT? <Bold>SIGN UP</Bold>
+            </CWMLink>
           </View>
+
         </View>
       </ImageBackground>
     );
@@ -58,26 +72,12 @@ export default class Login extends Component {
   }
 
   Components = {
-    forgetPasswordLink: (
-      <TouchableHighlight onPress={this._forgetPassword}>
-        <Text style={Styles.text}>Forget you login detail? <Bold>Get help sigining in</Bold></Text>
-      </TouchableHighlight>
-    ),
     signUpLink: (
       <TouchableHighlight onPress={this._signUp}>
-        <Text style={{ color: 'white' }}>DON'T HAVE AN ACCOUNT? <Bold>SIGN UP</Bold></Text>
+        <Text style={{ color: 'white' }}></Text>
       </TouchableHighlight>
     )
   }
-
-  contentsArr = [
-    new CardContent(ReactCmp.input('Email'), Constants.Css.inputWrapper),
-    new CardContent(ReactCmp.passwordInput, Constants.Css.inputWrapper),
-    new CardContent(this.Components.forgetPasswordLink),
-    new CardContent(ReactCmp.buttonTransparent('LOG IN', this._navigateToSports), Styles.loginButtonWrapper),
-    new CardContent(ReactCmp.textCentered('OR')),
-    new CardContent(FBLogin.facebookLoginButton(this._navigateToSports))
-  ]
 }
 
 const Styles = StyleSheet.create({
@@ -85,26 +85,23 @@ const Styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    borderWidth: 2,
     //paddingTop: ( Platform.OS === 'ios' ) ? 20 : 0
   },
-  cardHeaderText: {
+  header: {
     color: 'white',
     textAlign: 'center',
     fontFamily: "cathComic",
     fontSize: Constants.Css.primaryFontSize
   },
   text: {
-    color: 'white',
     marginLeft: 10,
-    fontSize: Constants.Css.secondaryFontSize
+    //fontSize: Constants.Css.secondaryFontSize
   },
   loginButtonWrapper: {
     borderWidth: 2,
-    borderColor: 'rgb(232, 232, 232)',
-    borderRadius: 5,
-    paddingTop: 5,
-    paddingBottom: 5
+    borderColor: 'rgb(232, 232, 232)'
   },
   footer: {
     width: '100%',

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { ReactCmp } from '../../components/ReactComponents';
+import { CWMText } from '../../components/ReactComponents';
 import {
     View, StyleSheet
 } from "react-native";
@@ -11,59 +11,41 @@ export interface CardConfig {
 }
 */
 
-export default class Card extends Component {
-    render() {
-        return (
-            <View style={Styles.card}>
+export default Card = ({ header, headerStyle, children, color, justifyContent }) => {
+    return (
+        <View style={[{ backgroundColor: color }, Styles.container]}>
 
-                <View style={Styles.header}>
-                    { ReactCmp.text(this.props.header.title, this.props.header.style) }
-                </View>
-
-                <View style={Styles.content}>
-                    {this._content}
-                </View>
-
+            <View style={Styles.header}>
+                <CWMText style={headerStyle}>{header}</CWMText>
             </View>
-        );
-    }
 
-    _content = (
-        this.props.content.map((cc,i) => {
-            return (
-                <View key={i} style={[Styles.row, cc.style]}>
-                    {cc.body}
-                </View>
-            )
-        })
-    )
+            <View style={Styles.body}>
+                {children.map((cmp, i) => {
+                    return (<View style={[Styles.row, { justifyContent: justifyContent }]} key={i}>{cmp}</View>)
+                })}
+            </View>
 
+        </View>
+    );
 }
 
 const Styles = StyleSheet.create({
     container: {
-        flex: 1,
+        flex: 0,
+        flexDirection: 'column',
         alignItems: 'center',
-        justifyContent: 'center',
-        flexDirection: 'column'
-        //paddingTop: ( Platform.OS === 'ios' ) ? 20 : 0
-    },
-    card: {
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
-        borderRadius: 5,
+        borderRadius: 10,
         width: '95%'
     },
     header: {
         padding: 16,
         overflow: 'hidden',
     },
-    content: {
-        width: '100%',
-        paddingTop: 13,
-        paddingRight: 16
+    body: {
+        width: '95%'
     },
     row: {
-        marginLeft: 10,
+        flexDirection: 'row',
         marginBottom: 10
     }
 })

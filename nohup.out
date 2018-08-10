@@ -313,3 +313,235 @@ This build could be faster, please consider using the Gradle Daemon: https://doc
 Running /home/zenbaei/Android/Sdk//platform-tools/adb -s emulator-5554 reverse tcp:8081 tcp:8081
 Starting the app on emulator-5554 (/home/zenbaei/Android/Sdk//platform-tools/adb -s emulator-5554 shell am start -n com.comewithme/com.comewithme.MainActivity)...
 Starting: Intent { cmp=com.comewithme/.MainActivity }
+Your emulator is out of date, please update by launching Android Studio:
+ - Start Android Studio
+ - Select menu "Tools > Android > SDK Manager"
+ - Click "SDK Tools" tab
+ - Check "Android Emulator" checkbox
+ - Click "OK"
+
+emulator: INFO: boot completed
+Scanning folders for symlinks in /home/zenbaei/Documents/jsWorkspace/ComeWithMe/node_modules (9ms)
+JS server already running.
+Building and installing the app on the device (cd android && ./gradlew installDebug)...
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/zenbaei/Android/Sdk/ndk-bundle.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/zenbaei/Android/Sdk/ndk-bundle.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/zenbaei/Android/Sdk/ndk-bundle.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareAndroidArchLifecycleRuntime103Library
+:app:prepareComAndroidSupportAnimatedVectorDrawable2702Library
+:app:prepareComAndroidSupportAppcompatV72702Library
+:app:prepareComAndroidSupportCardviewV72702Library
+:app:prepareComAndroidSupportCustomtabs2702Library
+:app:prepareComAndroidSupportSupportCompat2702Library
+:app:prepareComAndroidSupportSupportCoreUi2702Library
+:app:prepareComAndroidSupportSupportCoreUtils2702Library
+:app:prepareComAndroidSupportSupportFragment2702Library
+:app:prepareComAndroidSupportSupportMediaCompat2702Library
+:app:prepareComAndroidSupportSupportV42702Library
+:app:prepareComAndroidSupportSupportVectorDrawable2702Library
+:app:prepareComFacebookAndroidFacebookAndroidSdk4350Library
+:app:prepareComFacebookAndroidFacebookApplinks4350Library
+:app:prepareComFacebookAndroidFacebookCommon4350Library
+:app:prepareComFacebookAndroidFacebookCore4350Library
+:app:prepareComFacebookAndroidFacebookLogin4350Library
+:app:prepareComFacebookAndroidFacebookMarketing4350Library
+:app:prepareComFacebookAndroidFacebookMessenger4350Library
+:app:prepareComFacebookAndroidFacebookPlaces4350Library
+:app:prepareComFacebookAndroidFacebookShare4350Library
+:app:prepareComFacebookFbuiTextlayoutbuilderTextlayoutbuilder100Library
+:app:prepareComFacebookFrescoDrawee190Library
+:app:prepareComFacebookFrescoFbcore190Library
+:app:prepareComFacebookFrescoFresco190Library
+:app:prepareComFacebookFrescoImagepipeline190Library
+:app:prepareComFacebookFrescoImagepipelineBase190Library
+:app:prepareComFacebookFrescoImagepipelineOkhttp3190Library
+:app:prepareComFacebookReactReactNative0560Library
+:app:prepareComFacebookSoloaderSoloader030Library
+:app:prepareOrgWebkitAndroidJscR174650Library
+:react-native-fbsdk:preBuild UP-TO-DATE
+:react-native-fbsdk:preReleaseBuild UP-TO-DATE
+:react-native-fbsdk:checkReleaseManifest
+:react-native-fbsdk:preDebugAndroidTestBuild UP-TO-DATE
+:react-native-fbsdk:preDebugBuild UP-TO-DATE
+:react-native-fbsdk:preDebugUnitTestBuild UP-TO-DATE
+:react-native-fbsdk:preReleaseUnitTestBuild UP-TO-DATE
+:react-native-fbsdk:prepareAndroidArchLifecycleRuntime103Library
+:react-native-fbsdk:prepareComAndroidSupportAnimatedVectorDrawable2702Library
+:react-native-fbsdk:prepareComAndroidSupportAppcompatV72702Library
+:react-native-fbsdk:prepareComAndroidSupportCardviewV72702Library
+:react-native-fbsdk:prepareComAndroidSupportCustomtabs2702Library
+:react-native-fbsdk:prepareComAndroidSupportSupportCompat2702Library
+:react-native-fbsdk:prepareComAndroidSupportSupportCoreUi2702Library
+:react-native-fbsdk:prepareComAndroidSupportSupportCoreUtils2702Library
+:react-native-fbsdk:prepareComAndroidSupportSupportFragment2702Library
+:react-native-fbsdk:prepareComAndroidSupportSupportMediaCompat2702Library
+:react-native-fbsdk:prepareComAndroidSupportSupportV42702Library
+:react-native-fbsdk:prepareComAndroidSupportSupportVectorDrawable2702Library
+:react-native-fbsdk:prepareComFacebookAndroidFacebookAndroidSdk4350Library
+:react-native-fbsdk:prepareComFacebookAndroidFacebookApplinks4350Library
+:react-native-fbsdk:prepareComFacebookAndroidFacebookCommon4350Library
+:react-native-fbsdk:prepareComFacebookAndroidFacebookCore4350Library
+:react-native-fbsdk:prepareComFacebookAndroidFacebookLogin4350Library
+:react-native-fbsdk:prepareComFacebookAndroidFacebookMarketing4350Library
+:react-native-fbsdk:prepareComFacebookAndroidFacebookMessenger4350Library
+:react-native-fbsdk:prepareComFacebookAndroidFacebookPlaces4350Library
+:react-native-fbsdk:prepareComFacebookAndroidFacebookShare4350Library
+:react-native-fbsdk:prepareComFacebookFbuiTextlayoutbuilderTextlayoutbuilder100Library
+:react-native-fbsdk:prepareComFacebookFrescoDrawee190Library
+:react-native-fbsdk:prepareComFacebookFrescoFbcore190Library
+:react-native-fbsdk:prepareComFacebookFrescoFresco190Library
+:react-native-fbsdk:prepareComFacebookFrescoImagepipeline190Library
+:react-native-fbsdk:prepareComFacebookFrescoImagepipelineBase190Library
+:react-native-fbsdk:prepareComFacebookFrescoImagepipelineOkhttp3190Library
+:react-native-fbsdk:prepareComFacebookReactReactNative0560Library
+:react-native-fbsdk:prepareComFacebookSoloaderSoloader030Library
+:react-native-fbsdk:prepareOrgWebkitAndroidJscR174650Library
+:react-native-fbsdk:prepareReleaseDependencies
+:react-native-fbsdk:compileReleaseAidl UP-TO-DATE
+:react-native-fbsdk:compileReleaseNdk NO-SOURCE
+:react-native-fbsdk:compileLint UP-TO-DATE
+:react-native-fbsdk:copyReleaseLint NO-SOURCE
+:react-native-fbsdk:compileReleaseRenderscript UP-TO-DATE
+:react-native-fbsdk:generateReleaseBuildConfig UP-TO-DATE
+:react-native-fbsdk:generateReleaseResValues UP-TO-DATE
+:react-native-fbsdk:generateReleaseResources UP-TO-DATE
+:react-native-fbsdk:mergeReleaseResources UP-TO-DATE
+:react-native-fbsdk:processReleaseManifest UP-TO-DATE
+:react-native-fbsdk:processReleaseResources UP-TO-DATE
+:react-native-fbsdk:generateReleaseSources UP-TO-DATE
+:react-native-fbsdk:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:react-native-fbsdk:javaPreCompileRelease
+:react-native-fbsdk:compileReleaseJavaWithJavac UP-TO-DATE
+:react-native-fbsdk:extractReleaseAnnotations UP-TO-DATE
+:react-native-fbsdk:mergeReleaseShaders UP-TO-DATE
+:react-native-fbsdk:compileReleaseShaders UP-TO-DATE
+:react-native-fbsdk:generateReleaseAssets UP-TO-DATE
+:react-native-fbsdk:mergeReleaseAssets UP-TO-DATE
+:react-native-fbsdk:mergeReleaseProguardFiles UP-TO-DATE
+:react-native-fbsdk:packageReleaseRenderscript NO-SOURCE
+:react-native-fbsdk:packageReleaseResources UP-TO-DATE
+:react-native-fbsdk:processReleaseJavaRes NO-SOURCE
+:react-native-fbsdk:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:react-native-fbsdk:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:react-native-fbsdk:mergeReleaseJniLibFolders UP-TO-DATE
+:react-native-fbsdk:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:react-native-fbsdk:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:react-native-fbsdk:bundleRelease UP-TO-DATE
+:react-native-vector-icons:preBuild UP-TO-DATE
+:react-native-vector-icons:preReleaseBuild UP-TO-DATE
+:react-native-vector-icons:checkReleaseManifest
+:react-native-vector-icons:preDebugAndroidTestBuild UP-TO-DATE
+:react-native-vector-icons:preDebugBuild UP-TO-DATE
+:react-native-vector-icons:preDebugUnitTestBuild UP-TO-DATE
+:react-native-vector-icons:preReleaseUnitTestBuild UP-TO-DATE
+:react-native-vector-icons:prepareAndroidArchLifecycleRuntime100Library
+:react-native-vector-icons:prepareComAndroidSupportAnimatedVectorDrawable2610Library
+:react-native-vector-icons:prepareComAndroidSupportAppcompatV72610Library
+:react-native-vector-icons:prepareComAndroidSupportSupportCompat2610Library
+:react-native-vector-icons:prepareComAndroidSupportSupportCoreUi2610Library
+:react-native-vector-icons:prepareComAndroidSupportSupportCoreUtils2610Library
+:react-native-vector-icons:prepareComAndroidSupportSupportFragment2610Library
+:react-native-vector-icons:prepareComAndroidSupportSupportMediaCompat2610Library
+:react-native-vector-icons:prepareComAndroidSupportSupportV42610Library
+:react-native-vector-icons:prepareComAndroidSupportSupportVectorDrawable2610Library
+:react-native-vector-icons:prepareComFacebookFbuiTextlayoutbuilderTextlayoutbuilder100Library
+:react-native-vector-icons:prepareComFacebookFrescoDrawee190Library
+:react-native-vector-icons:prepareComFacebookFrescoFbcore190Library
+:react-native-vector-icons:prepareComFacebookFrescoFresco190Library
+:react-native-vector-icons:prepareComFacebookFrescoImagepipeline190Library
+:react-native-vector-icons:prepareComFacebookFrescoImagepipelineBase190Library
+:react-native-vector-icons:prepareComFacebookFrescoImagepipelineOkhttp3190Library
+:react-native-vector-icons:prepareComFacebookReactReactNative0560Library
+:react-native-vector-icons:prepareComFacebookSoloaderSoloader030Library
+:react-native-vector-icons:prepareOrgWebkitAndroidJscR174650Library
+:react-native-vector-icons:prepareReleaseDependencies
+:react-native-vector-icons:compileReleaseAidl UP-TO-DATE
+:react-native-vector-icons:compileReleaseNdk NO-SOURCE
+:react-native-vector-icons:compileLint UP-TO-DATE
+:react-native-vector-icons:copyReleaseLint NO-SOURCE
+:react-native-vector-icons:compileReleaseRenderscript UP-TO-DATE
+:react-native-vector-icons:generateReleaseBuildConfig UP-TO-DATE
+:react-native-vector-icons:generateReleaseResValues UP-TO-DATE
+:react-native-vector-icons:generateReleaseResources UP-TO-DATE
+:react-native-vector-icons:mergeReleaseResources UP-TO-DATE
+:react-native-vector-icons:processReleaseManifest UP-TO-DATE
+:react-native-vector-icons:processReleaseResources UP-TO-DATE
+:react-native-vector-icons:generateReleaseSources UP-TO-DATE
+:react-native-vector-icons:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:react-native-vector-icons:javaPreCompileRelease
+:react-native-vector-icons:compileReleaseJavaWithJavac UP-TO-DATE
+:react-native-vector-icons:extractReleaseAnnotations UP-TO-DATE
+:react-native-vector-icons:mergeReleaseShaders UP-TO-DATE
+:react-native-vector-icons:compileReleaseShaders UP-TO-DATE
+:react-native-vector-icons:generateReleaseAssets UP-TO-DATE
+:react-native-vector-icons:mergeReleaseAssets UP-TO-DATE
+:react-native-vector-icons:mergeReleaseProguardFiles UP-TO-DATE
+:react-native-vector-icons:packageReleaseRenderscript NO-SOURCE
+:react-native-vector-icons:packageReleaseResources UP-TO-DATE
+:react-native-vector-icons:processReleaseJavaRes NO-SOURCE
+:react-native-vector-icons:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:react-native-vector-icons:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:react-native-vector-icons:mergeReleaseJniLibFolders UP-TO-DATE
+:react-native-vector-icons:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:react-native-vector-icons:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:react-native-vector-icons:bundleRelease UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:mergeDebugShaders UP-TO-DATE
+:app:compileDebugShaders UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:bundleDebugJsAndAssets SKIPPED
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:incrementalDebugJavaCompilationSafeguard UP-TO-DATE
+:app:javaPreCompileDebug
+:app:compileDebugJavaWithJavac UP-TO-DATE
+:app:compileDebugNdk NO-SOURCE
+:app:compileDebugSources UP-TO-DATE
+:app:transformClassesWithDexForDebug UP-TO-DATE
+:app:mergeDebugJniLibFolders UP-TO-DATE
+:app:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:app:processDebugJavaRes NO-SOURCE
+:app:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:app:validateSigningDebug
+:app:packageDebug UP-TO-DATE
+:app:assembleDebug UP-TO-DATE
+:app:installDebug FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:installDebug'.
+> com.android.builder.testing.api.DeviceException: No connected devices!
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 1.738 secs
+Could not install the app on the device, read the error above for details.
+Make sure you have an Android emulator running or a device connected and have
+set up your Android development environment:
+https://facebook.github.io/react-native/docs/getting-started.html
+emulator: INFO: boot completed

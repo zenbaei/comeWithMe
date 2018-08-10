@@ -1,43 +1,69 @@
-import React, { Component } from "react";
+import React from "react";
 import {
-    View, StyleSheet, Text, ImageBackground, List, TextInput,
+    View, StyleSheet, Text, TextInput,
     Button, TouchableHighlight
 } from "react-native";
 import * as Constants from '../Constants';
 
-export default class ReactComponents {
-    
-    passwordInput = (<TextInput style={Styles.input} placeholder="Password" placeholderTextColor="white"></TextInput>);
-    
-    input = (placeholder) => {
-        return (<TextInput style={Styles.input} placeholder={placeholder} placeholderTextColor="white"></TextInput>);
-    }
+export const CWMInput = ({ placeholder, fontSize }) => {
+    return (
+        <View style={Styles.inputWrapper}>
+            <TextInput style={Styles.input} placeholder={placeholder} placeholderTextColor="white"></TextInput>
+        </View>
+    )
+}
 
-    text = (text, style) => {
-        return (<Text style={style}>{text}</Text>);
-    }
+export const CWMLink = ({ onPress, children, style, color, primary }) => {
+    return (
+        <TouchableHighlight onPress={onPress}>
+            <Text style={[{
+                color: color ? color : 'white',
+                fontSize: primary ? Constants.Css.primaryFontSize : Constants.Css.secondaryFontSize
+            },
+                style]}>{children}</Text>
+        </TouchableHighlight>
+    )
+}
 
-    textCentered = (text) => {
-        return this.text(text, Styles.centeredText);
-    }
+export const CWMButton = ({ title, onPress, style, color }) => {
+    return (
+        <View style={[Styles.button, { borderColor: color ? color : 'white', backgroundColor: color }]}>
+            <Button color='transparent' title={title} onPress={onPress}></Button>
+        </View>
+    )
+}
 
-    buttonTransparent = (title, func) => {
-        return (<Button color="transparent" title={title} onPress={func}></Button>)
-    }
-
+export const CWMText = ({ children, align, color, primary, style }) => {
+    return (
+        <Text style={[{
+            textAlign: align, color: color ? color : 'white',
+            fontSize: primary ? Constants.Css.primaryFontSize : Constants.Css.secondaryFontSize
+        }, Styles.text, style]}>
+            {children}
+        </Text>
+    )
 }
 
 const Styles = StyleSheet.create({
+    inputWrapper: {
+        backgroundColor: 'rgba(255, 255, 255, 0.5)',
+        borderRadius: Constants.Css.borderRadius,
+        width: '100%'
+    },
     input: {
         marginLeft: 5,
         color: 'white',
-        fontSize: Constants.Css.primaryFontSize,
+        fontSize: Constants.Css.secondaryFontSize
     },
-    centeredText: {
-        textAlign: 'center',
-        fontSize: Constants.Css.secondaryFontSize,
-        color: 'white'
+    button: {
+        borderRadius: 5,
+        paddingTop: 5,
+        paddingBottom: 5,
+        width: '100%',
+        borderWidth: 2
     },
-})
+    text: {
+        width: '100%'
+    }
 
-export const ReactCmp = new ReactComponents();
+})

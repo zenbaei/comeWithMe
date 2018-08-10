@@ -1,6 +1,7 @@
 import { createStackNavigator } from 'react-navigation';
 import Login from './src/login/Login';
-import Sports from './src/Sports';
+import Sports from './src/sport/Sports';
+import Map from './src/Map';
 
 const App = createStackNavigator({
     Home: {
@@ -13,6 +14,12 @@ const App = createStackNavigator({
         screen: Sports,
         navigationOptions: {
             title: 'Sports'
+        }
+    },
+    Map: {
+        screen: Map,
+        navigationOptions: {
+            title: 'Your sports area'
         }
     }
 });
