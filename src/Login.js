@@ -2,14 +2,12 @@ import React, { Component } from "react";
 import {
   View, StyleSheet, Text, ImageBackground, TouchableHighlight
 } from "react-native";
-import Bold from '../components/Bold';
-import Register from '../register/Register';
-import Card from "../components/card/Card";
-import CardContent from "../components/card/CardContent";
-import CardHeader from "../components/card/CardHeader";
-import { ReactCmp, CWMInput, CWMLink, CWMButton, CWMText } from '../components/ReactComponents';
-import * as Constants from '../Constants';
-import { CWMFBLogin } from './FacebookLogin';
+import Bold from './components/Bold';
+import Register from './Register';
+import Card from "./components/card/Card";
+import { CWMInput, CWMLink, CWMButton, CWMText } from './components/ReactComponents';
+import * as Constants from './Constants';
+import { CWMFBLogin } from './components/FacebookLogin';
 
 //type Props = {};
 export default class Login extends Component {
@@ -27,7 +25,7 @@ export default class Login extends Component {
 
   render() {
     return (
-      <ImageBackground source={require("../../assets/images/cmeWithMe.jpg")}
+      <ImageBackground source={require("../assets/images/arnold-shirt.jpg")}
         resizeMode="cover" style={{ width: '100%', height: '100%' }}>
 
         <View style={Styles.container}>
@@ -38,9 +36,9 @@ export default class Login extends Component {
             <CWMLink onPress={this._forgetPassword} style={Styles.text}>
               Forget you login detail? <Bold>Get help sigining in</Bold>
             </CWMLink>
-            <CWMButton title='LOGIN' onPress={this._navigateToSports} style={Styles.loginButtonWrapper} />
+            <CWMButton onPress={this._navigateToLocation} style={Styles.loginButtonWrapper}>LOGIN</CWMButton>
             <CWMText align='center'>OR</CWMText>
-            <CWMFBLogin onSuccessCallback={this._navigateToSports} />
+            <CWMFBLogin onSuccessCallback={this._navigateToLocation} />
           </Card>
 
           <View style={Styles.footer}>
@@ -59,24 +57,22 @@ export default class Login extends Component {
   }
 
   _signUp = () => {
-    alert('sign up button');
+    const { navigate } = this.props.navigation;
+    navigate('Register');
   }
 
   _forgetPassword = () => {
     alert('forget sign up button');
   }
 
-  _navigateToSports = () => {
+  _navigateToSport = (result) => {
     const { navigate } = this.props.navigation;
-    navigate('Sports');
+    //navigate('Sport');
   }
 
-  Components = {
-    signUpLink: (
-      <TouchableHighlight onPress={this._signUp}>
-        <Text style={{ color: 'white' }}></Text>
-      </TouchableHighlight>
-    )
+  _navigateToLocation = (result) => {
+    const { navigate } = this.props.navigation;
+    navigate('Country', {data: result});
   }
 }
 

@@ -1,7 +1,9 @@
 import { createStackNavigator } from 'react-navigation';
-import Login from './src/login/Login';
-import Sports from './src/sport/Sports';
-import Map from './src/Map';
+import Login from './src/Login';
+import Sport from './src/sport/Sport';
+import Map from './src/location/Map';
+import Country from './src/Country';
+import Register from './src/Register';
 
 const App = createStackNavigator({
     Home: {
@@ -10,8 +12,8 @@ const App = createStackNavigator({
             header: null
         }
     },
-    Sports: {
-        screen: Sports,
+    Sport: {
+        screen: Sport,
         navigationOptions: {
             title: 'Sports'
         }
@@ -20,6 +22,18 @@ const App = createStackNavigator({
         screen: Map,
         navigationOptions: {
             title: 'Your sports area'
+        }
+    },
+    Country: {
+        screen: Country,
+        navigationOptions: {
+            title: 'Location'
+        }
+    },
+    Register: {
+        screen: Register,
+        navigationOptions: {
+            title: 'Registeration'
         }
     }
 });

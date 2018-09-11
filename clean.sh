@@ -1,4 +1,5 @@
 ## Kill js server
+
 PID=lsof -i :8081 | cut -d " " -f 2
 for i in $PID
 do

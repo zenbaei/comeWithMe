@@ -2,10 +2,10 @@ import React from "react";
 import { AccessToken, GraphRequest, GraphRequestManager } from 'react-native-fbsdk';
 const FBSDK = require('react-native-fbsdk');
 import Icon from "react-native-vector-icons/FontAwesome";
-import Bold from '../components/Bold';
+import Bold from './Bold';
 import * as Constants from '../Constants';
 import {
-    Text, TouchableHighlight, StyleSheet, View
+    Text, TouchableHighlight, StyleSheet
 } from "react-native";
 
 const {
@@ -14,7 +14,7 @@ const {
 
 
 const _login = (onSuccessCallback) => {
-    LoginManager.logInWithReadPermissions(['email']).then(
+    LoginManager.logInWithReadPermissions(['email']).then( //user_hometown
         (result) => {
             if (result.isCancelled) {
                 alert('Login was cancelled');
@@ -40,7 +40,7 @@ const _facebookRequest = function (accessToken, onSuccessCallback) {
             accessToken: accessToken,
             parameters: {
                 fields: {
-                    string: 'email,name,first_name,middle_name,last_name'
+                    string: 'email,name,first_name,middle_name,last_name,hometown'
                 }
             }
         },
@@ -48,14 +48,13 @@ const _facebookRequest = function (accessToken, onSuccessCallback) {
     );
 }
 
-const _facebookResponseCallback = (onSuccessCallback) => {
+const _facebookResponseCallback = (callback) => {
 
     function fbRspClb(error, result) {
         if (error) {
-            console.log(error)
-            alert('Error fetching data: ' + error.toString());
+            alert('Error fetching data: ' + JSON.stringify(error));
         } else {
-            onSuccessCallback();
+            callback(result);
         }
     }
 

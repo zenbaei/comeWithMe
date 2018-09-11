@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import {
-    View, StyleSheet
+    View, StyleSheet, Text
 } from "react-native";
-import MapView from 'react-native-maps';
+import MapView, { Circle } from 'react-native-maps';
 import { CurrentLocation } from './Geolocation';
-import { CWMText } from './components/ReactComponents';
+import { CWMText, CWMButton } from '../components/ReactComponents';
 
 export default class Map extends Component {
 
@@ -36,6 +36,10 @@ export default class Map extends Component {
         this.setState({ region });
     }
 
+    onRegionChangeComplete = (region) => {
+
+    }
+
     render() {
         if (this.state.isLoading) {
             return (<CWMText color="black" primary>Loading...</CWMText>)
@@ -43,11 +47,22 @@ export default class Map extends Component {
         return (
             <View style={styles.container}>
                 <MapView style={styles.map}
-                    region={this.state.region}
+                    initialRegion={this.state.region}
                     onRegionChange={this.onRegionChange}
+                    onRegionChangeComplete={this.onRegionChangeComplete}
                     zoomEnabled={true}
                     zoomControlEnabled={true}
-                />
+                >
+                    <Circle center={{
+                        latitude: this.state.region.latitude,
+                        longitude: this.state.region.longitude
+                    }}
+                        radius={3000} fillColor='#FF7171' strokeColor="red" strokeWidth={2} />
+                </MapView>
+                <View style={styles.buttonContainer}>
+                    <CWMButton title="Done"
+                        onPress={this.onRegionChangeComplete} color="blue" />
+                </View>
             </View>
         );
     }
@@ -56,12 +71,22 @@ export default class Map extends Component {
 const styles = StyleSheet.create({
     container: {
         ...StyleSheet.absoluteFillObject,
-        //height: 400,
-        //width: 400,
         justifyContent: 'flex-end',
         alignItems: 'center',
     },
     map: {
         ...StyleSheet.absoluteFillObject,
+    },
+    bubble: {
+        backgroundColor: 'rgba(255,255,255,0.7)',
+        paddingHorizontal: 18,
+        paddingVertical: 12,
+        borderRadius: 20,
+    },
+    buttonContainer: {
+        flexDirection: 'row',
+        marginVertical: 20,
+        //backgroundColor: 'transparent',
+        width: '30%'
     },
 });

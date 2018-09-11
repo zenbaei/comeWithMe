@@ -25,7 +25,15 @@ export const CWMLink = ({ onPress, children, style, color, primary }) => {
     )
 }
 
-export const CWMButton = ({ title, onPress, style, color }) => {
+export const CWMButton = ({ children, onPress, style, color }) => {
+    return (
+        <TouchableHighlight style={[{backgroundColor: color}, Styles.buttonWrapper, style]} onPress={onPress}>
+            <Text style={Styles.buttonText}>{children}</Text>
+        </TouchableHighlight>
+    )
+}
+
+export const _CWMButton = ({ title, onPress, style, color }) => {
     return (
         <View style={[Styles.button, { borderColor: color ? color : 'white', backgroundColor: color }]}>
             <Button color='transparent' title={title} onPress={onPress}></Button>
@@ -64,6 +72,17 @@ const Styles = StyleSheet.create({
     },
     text: {
         width: '100%'
+    },
+    buttonWrapper: {
+        paddingTop: 15,
+        paddingBottom: 15,
+        borderRadius: 5,
+        width: '100%'
+    },
+    buttonText: {
+        fontSize: Constants.Css.secondaryFontSize,
+        color: 'white',
+        textAlign: 'center'
     }
 
 })

@@ -1,5 +1,5 @@
 import { PermissionsAndroid } from 'react-native';
-import Log from './Log';
+import Log from '../util/Log';
 
 export const CurrentLocation = (callback) => {
     requestLocationPermission().then(

@@ -4,15 +4,15 @@ import {
 } from "react-native";
 import { CWMButton } from '../components/ReactComponents';
 import * as Constants from '../Constants';
-import { SportsMap } from "./SportIcon";
+import { SportsCollection } from "./SportInfo";
 import Icon from "../components/Icon";
 import Card from "../components/card/Card";
 
-export default class Sports extends Component {
+export default class Sport extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { sportsMap: SportsMap };
+        this.state = { SportsCollection };
     }
 
     render() {
@@ -24,14 +24,14 @@ export default class Sports extends Component {
                     {this._iconComponents(10, 15)}
                 </Card>
                 <View style={Styles.footer}>
-                    <CWMButton title='Proceed' onPress={this._openLocationView} borderColor="blue" />
+                    <CWMButton onPress={this._openLocationView} borderColor="blue">Proceed</CWMButton>
                 </View>
             </View>
         );
     }
 
     _iconComponents = (from, to) => {
-        return Array.from(this.state.sportsMap.values()).map((obj, i) => {
+        return Array.from(this.state.SportsCollection.values()).map((obj, i) => {
             if (i >= from && i < to) {
                 return this._getComponent(obj, i);
             }
@@ -54,7 +54,7 @@ export default class Sports extends Component {
                 this._select(obj.name);
             }}>
                 <View style={Styles.iconWrapper}>
-                    <Icon name={obj.name} source={obj.source} size={icon.size}
+                    <Icon name={obj.name} source={obj.iconSource} size={icon.size}
                         color={obj.isToggled ? icon.dimmed : icon.color} />
                 </View>
             </TouchableOpacity>
@@ -62,10 +62,10 @@ export default class Sports extends Component {
     }
 
     _select = (name) => {
-        let sptMap = this.state.sportsMap;
-        let sport = sptMap.get(name);
+        let collection = this.state.SportsCollection;
+        let sport = collection.get(name);
         sport.isToggled = !sport.isToggled;
-        this.setState({ sportsMap: sptMap });
+        this.setState({ collection });
     }
 
 }
