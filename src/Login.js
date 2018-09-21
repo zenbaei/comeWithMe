@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {
-  View, StyleSheet, Text, ImageBackground, TouchableHighlight
+  View, StyleSheet, ImageBackground, KeyboardAvoidingView
 } from "react-native";
 import Bold from './components/Bold';
 import Register from './Register';
@@ -8,6 +8,7 @@ import Card from "./components/card/Card";
 import { CWMInput, CWMLink, CWMButton, CWMText } from './components/ReactComponents';
 import * as Constants from './Constants';
 import { CWMFBLogin } from './components/FacebookLogin';
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 
 //type Props = {};
 export default class Login extends Component {
@@ -28,7 +29,9 @@ export default class Login extends Component {
       <ImageBackground source={require("../assets/images/arnold-shirt.jpg")}
         resizeMode="cover" style={{ width: '100%', height: '100%' }}>
 
-        <View style={Styles.container}>
+       <KeyboardAvoidingView
+          style={Styles.container}
+          behavior="padding">
 
           <Card header='Come With Me' headerStyle={Styles.header} color='rgba(0, 0, 0, 0.5)'>
             <CWMInput placeholder='Email' />
@@ -46,8 +49,8 @@ export default class Login extends Component {
               DON'T HAVE AN ACCOUNT? <Bold>SIGN UP</Bold>
             </CWMLink>
           </View>
-
-        </View>
+        </KeyboardAvoidingView>
+    
       </ImageBackground>
     );
   }
@@ -72,7 +75,7 @@ export default class Login extends Component {
 
   _navigateToLocation = (result) => {
     const { navigate } = this.props.navigation;
-    navigate('Country', {data: result});
+    navigate('Country', { data: result });
   }
 }
 

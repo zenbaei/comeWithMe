@@ -5,10 +5,10 @@ import {
 } from "react-native";
 import * as Constants from '../Constants';
 
-export const CWMInput = ({ placeholder, fontSize }) => {
+export const CWMInput = ({ placeholder, ...otherProps }) => {
     return (
         <View style={Styles.inputWrapper}>
-            <TextInput style={Styles.input} placeholder={placeholder} placeholderTextColor="white"></TextInput>
+            <TextInput style={Styles.input} placeholder={placeholder} placeholderTextColor="white" {...otherProps}></TextInput>
         </View>
     )
 }
