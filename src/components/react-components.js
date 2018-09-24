@@ -3,7 +3,7 @@ import {
     View, StyleSheet, Text, TextInput,
     Button, TouchableHighlight
 } from "react-native";
-import * as Constants from '../Constants';
+import * as Constants from '../constants';
 
 export const CWMInput = ({ placeholder, ...otherProps }) => {
     return (

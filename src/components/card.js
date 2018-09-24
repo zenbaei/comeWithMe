@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { CWMText } from '../../components/ReactComponents';
+import React from "react";
+import { CWMText } from './react-components';
 import {
     View, StyleSheet
 } from "react-native";

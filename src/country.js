@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import {
     View, StyleSheet, Picker
 } from "react-native";
-import { CWMButton, CWMText } from './components/ReactComponents';
-import Card from "./components/card/Card";
-import { Countries } from "./Constants";
+import { CWMButton, CWMText } from './components/react-components';
+import Card from "./components/card";
+import { Countries } from "./constants";
 
 export default class Country extends Component {
 

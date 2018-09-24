@@ -2,7 +2,7 @@ import React from "react";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import CommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-import { IconSource } from "../Constants";
+import { IconSource } from "../constants";
 
 export default Icon = ({name, source, style, ...otherProperties}) => {
     switch (source) {

@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import {
     View, StyleSheet, TouchableOpacity
 } from "react-native";
-import { CWMButton } from '../components/ReactComponents';
-import * as Constants from '../Constants';
-import { SportsCollection } from "./SportInfo";
-import Icon from "../components/Icon";
-import Card from "../components/card/Card";
+import { CWMButton } from '../components/react-components';
+import * as Constants from '../constants';
+import { SportsCollection } from "./sport-model";
+import Icon from "../components/icon";
+import Card from "../components/card";
 
 export default class Sport extends Component {
 

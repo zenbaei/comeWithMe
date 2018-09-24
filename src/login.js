@@ -2,12 +2,12 @@ import React, { Component } from "react";
 import {
   View, StyleSheet, ImageBackground, KeyboardAvoidingView
 } from "react-native";
-import Bold from './components/Bold';
-import Register from './Register';
-import Card from "./components/card/Card";
-import { CWMInput, CWMLink, CWMButton, CWMText } from './components/ReactComponents';
-import * as Constants from './Constants';
-import { CWMFBLogin } from './components/FacebookLogin';
+import Bold from './components/bold';
+import Register from './register';
+import Card from "./components/card";
+import { CWMInput, CWMLink, CWMButton, CWMText } from './components/react-components';
+import * as Constants from './constants';
+import { CWMFBLogin } from './components/facebook-login';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 
 //type Props = {};

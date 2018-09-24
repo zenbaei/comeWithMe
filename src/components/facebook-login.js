@@ -2,8 +2,8 @@ import React from "react";
 import { AccessToken, GraphRequest, GraphRequestManager } from 'react-native-fbsdk';
 const FBSDK = require('react-native-fbsdk');
 import Icon from "react-native-vector-icons/FontAwesome";
-import Bold from './Bold';
-import * as Constants from '../Constants';
+import Bold from './bold';
+import * as Constants from '../constants';
 import {
     Text, TouchableHighlight, StyleSheet
 } from "react-native";

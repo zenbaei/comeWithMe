@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import {
-    View, StyleSheet, Text
+    View, StyleSheet
 } from "react-native";
 import MapView, { Circle } from 'react-native-maps';
-import { CurrentLocation } from './Geolocation';
-import { CWMText, CWMButton } from '../components/ReactComponents';
+import { CurrentLocation } from './geolocation';
+import { CWMText, CWMButton } from '../components/react-components';
 
-export default class Map extends Component {
+export default class MapScreen extends Component {
 
     long = 31.4400768;
     lat = 30.0056576;
